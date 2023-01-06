@@ -2,8 +2,10 @@ from pytesseract import pytesseract
 
 
 class OCR:
-    def _init_(self):
+
+    def __init__(self):
         self.path = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
+        print("initialization")
 
     def extract(self, test):
 
